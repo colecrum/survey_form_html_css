@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey_Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+
+<style src = "index.css">
+</style>
+    </head>
+ 
+ <body>
+
+<main id = "main">
+  <h1 id = "title"> We Welcome Your Feedback </h1>
+  <p id = "description">
+    Thank you for sharing your experience
+  </p><br>
+  
+ <div id = "thumbnail" class = "fullCard">
+  <form id = "survey-form" action = ""> 
+  
+    <label for = "name" id = "name-label" class = "field-title">
+    Name
+    <input type="text" id = "name" class = "stretch-field" placeholder="Enter your name" required><br>
+  </label>
+  
+  <label for = "email" id = "email-label" class = "field-title">
+    Email
+    <input type = "email" id = "email" class = "stretch-field" placeholder = "Enter your email" required><br>
+  </label> 
+   
+   <label for = "age" id = "number-label" class = "field-title">
+    Age (optional)
+    <input type = "number" id = "number" class = "stretch-field" placeholder = "Enter your age" min = "18" max = "100"><br>
+  </label> 
+   
+    <label for = "visit" id = "dropdown-label" class = "field-title">
+      What brings you by?
+      <select id = "dropdown" class = "stretch-field">
+        <option value = "hi">Just saying hi</option>
+        <option value = "question">I have a question</option>
+        <option value = "issue">I have an issue</option>
+      </select>
+      <br>
+        </label>
+    
+    <label for = "recommend" id = radio-label class = "field-title">
+      How likely are you to recommend us?
+      <br>
+      <input type = "radio" id = "rock" name = "recommend" value = "rock">
+      <label for = "rock" class = "radio-layout">You rock!</label><br>
+      <input type = "radio" id = "eh" name = "recommend" value = "eh">
+      <label for = "eh" class = "radio-layout">Eh, could be better</label><br>
+      <input type = "radio" id = "bro" name = "recommend" value = "bro">
+      <label for = "bro" class = "radio-layout">No way, bro</label><br>
+    <br>
+    </label>
+    
+    <label for = "improve" id = "dropdown-label2" class = "field-title">
+      How can we improve?
+      <select id = "dropdown" class = "stretch-field">
+        <option value = "service">Better customer service</option>
+        <option value = "content">Better and/or more content</option>
+        <option value = "add">Offer additional services</option>
+      </select>
+      <br>
+        </label>
+  
+    <label for = "services" id = "checkbox-label" class = "field-title">
+      What additional services would you like to see?
+  <br><input type = "checkbox" id = "branding" name = "branding" value = "Branding">
+      <label for = "branding" class = "radio-layout">Branding</label><br>
+      <input type = "checkbox" id = "seo" name = "seo" value = "SEO & Marketing">
+      <label for = "seo" class = "radio-layout">SEO & Marketing</label><br>
+      <input type = "checkbox" id = "logo" name = "logo" value = "Logo Design">
+      <label for = "logo" class = "radio-layout">Logo Design</label><br>
+      <input type = "checkbox" id = "web" name = "web" value = "Self-Managed Website">
+      <label for = "web" class = "radio-layout">Self-Managed Website</label><br>
+      <input type = "checkbox" id = "dev" name = "dev" value = "Developed Website">
+      <label for = "dev" class = "radio-layout">Developed Website</label><br>
+      <input type = "checkbox" id = "general" name = "general" value = "General Consulting">
+      <label for = "general" class = "radio-layout">General Consulting</label><br>
+    <br>
+    </label>
+    
+   <label for = "comment" id = "comment-label" class = "field-title">
+      Anything else you'd like to share?
+    <textarea name = "comment" id = "comment-box" class = "stretch-field">Enter comments here...</textarea>
+     <br>
+    </label>
+    
+    <input type="submit" value="Submit" id = "submit" class = "submit-layout">
+    
+  </form>
+  </div>
+</main>
+    </body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
