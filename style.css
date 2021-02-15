@@ -3,34 +3,31 @@ body {
   font-family: "Georgia", serif;
 }
 
+/* MAIN --------------------------------------------- */
+
+/* Style page header */
 h1 {
   color: rgb(248, 222, 126);
   text-align: center;
   font-size: 50px;
 }
 
-.field-title {
-  font-size: 25px;
-  color: rgb(248, 222, 126);
-  font-weight: bold;
-}
-
-.radio-layout {
-  font-size: 15px;
-}
-
+/* Style page sub-header */
 #description {
   color: #FFFFFF;
   text-align: center;
 }
 
-#thumbnail {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  color: rgb(0, 0, 255);
-  }
- 
+/* Style designed by header */
+h2 {
+  font-size: 30px;
+}
+
+/* FORM -------------------------------------------- */
+
+/* Form container */
   .fullCard {
-    width: 800px;
+    width: 50%;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 10px 5px;
@@ -38,10 +35,33 @@ h1 {
     margin: auto;
   }
 
+/* Media mobile sizing to fit form container in view */
+@media only screen and (max-width: 600px) {
+  .fullCard {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+/* Form container shadow */
+#thumbnail {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  color: rgb(0, 0, 255);
+  }
+
+/* Style for input headers */
+.field-title {
+  font-size: 25px;
+  color: rgb(248, 222, 126);
+  font-weight: bold;
+}
+
+/* Style input field */
 input {
   border-radius: 5px;
 }
 
+/* Stretch input field to container width */
 .stretch-field {
   display: flex;
   margin-top: 10px;
@@ -50,10 +70,17 @@ input {
   height: 30px;
 }
 
+/* Style radio buttons */
+.radio-layout {
+  font-size: 15px;
+}
+
+/* Style select option */
 select {
   border-radius: 5px;
 }
 
+/* Style comment box */
 #comment-box{
   display: flex;
   width: 100%;
@@ -63,28 +90,44 @@ select {
   padding: 0px;
 }
 
+/* Style submit button */
 .submit-layout {
   height: 35px;
   width: 70px;
 }
 
+
+/* SIGN-OFF --------------------------------------------*/
+
+/*designed by & contact*/
 #contact-section {
   color: white;
   text-align: center;
+  min-height: 33vh;
 }
 
 .contact-links {
   height: auto;
-  width: 100%;
+  width: 25%;
+  display: inline-block;
+  padding: 20px;
+}
+
+.link-cont {
+  float: left;
+  width: 25%;
 }
 
 .contact-img {
   height: 75px;
   width: 75px;
-  padding: 25px;
 }
 
 #git-logo {
   height: 75px;
-  width: 125px;
+  width: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-links {width: 100%;}
 }
