@@ -1,6 +1,11 @@
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: rgb(0, 0, 255, 50%);
   font-family: "Georgia", serif;
+  position: relative;
 }
 
 /* MAIN --------------------------------------------- */
