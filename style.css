@@ -40,14 +40,6 @@ h2 {
     margin: auto;
   }
 
-/* Media mobile sizing to fit form container in view */
-@media only screen and (max-width: 600px) {
-  .fullCard {
-    width: 75%;
-    margin: auto;
-  }
-}
-
 /* Form container shadow */
 #thumbnail {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -101,6 +93,19 @@ select {
   width: 70px;
 }
 
+/* Media mobile sizing to fit form container in view */
+@media only screen and (max-width: 600px) {
+  .fullCard {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  .fullCard {
+    width: 85%;
+  }
+}
 
 /* SIGN-OFF --------------------------------------------*/
 
@@ -134,5 +139,9 @@ select {
 }
 
 @media only screen and (max-width: 600px) {
+  .contact-links {width: 100%;}
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape) {
   .contact-links {width: 100%;}
 }
